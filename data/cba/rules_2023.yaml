@@ -1,0 +1,81 @@
+cba_version: "2023"
+effective_seasons:
+  start: "2023-24"
+  end: ""
+threshold_sources:
+  salary_cap_and_tax: "adapter-supplied or demo-fixture thresholds for {season}"
+  rookie_scale_reference: "cbafaq.com/scale17.htm"
+  minimum_salary_reference: "cbafaq.com/minimum.htm"
+roster_limits:
+  offseason_maximum: 20
+  regular_season_standard_contracts: 15
+  two_way_contracts: 3
+  inactive_limit_per_game: 4
+salary_maximums:
+  experience_percentages:
+    years_0_to_6: 0.25
+    years_7_to_9: 0.30
+    years_10_plus: 0.35
+  designated_rookie_extension_percentages:
+    standard: 0.25
+    rose_rule: 0.30
+  annual_raise_limits:
+    bird_or_designated: 0.08
+    non_bird_or_cap_room: 0.05
+minimum_salary:
+  determined_by_experience: true
+  veteran_minimum_exception_available: true
+rookie_scale:
+  guaranteed_years: 2
+  team_option_years:
+    - 3
+    - 4
+  qualifying_offer_year: 5
+bird_rights:
+  full_bird_vested_after_seasons: 3
+  early_bird_vested_after_seasons: 2
+  non_bird_starting_salary_limit: "120% of previous salary or 120% of the minimum salary, whichever is greater"
+  early_bird_starting_salary_limit: "175% of previous salary or 105% of the league average salary, whichever is greater"
+trade_matching:
+  below_first_apron_rules:
+    - outgoing_maximum: 7500000
+      incoming_limit: "200% of outgoing salary plus $250,000"
+    - outgoing_maximum: 29000000
+      incoming_limit: "Outgoing salary plus $7,500,000"
+    - outgoing_minimum: 29000001
+      incoming_limit: "125% of outgoing salary plus $250,000"
+  first_apron_or_above_rule:
+    incoming_limit: "100% of outgoing salary"
+    can_take_back_more_salary_than_sent: false
+  second_apron_trade_restrictions:
+    incoming_limit: "100% of outgoing salary"
+    can_aggregate_contracts: false
+    can_send_cash_in_trades: false
+    can_use_preexisting_trade_exceptions: false
+    can_trade_first_round_pick_seven_years_out_if_previous_pick_frozen: false
+exceptions:
+  mid_level:
+    non_taxpayer:
+      available_below_first_apron: true
+      hard_caps_team_at_first_apron: true
+    taxpayer:
+      available_below_second_apron: true
+      unavailable_at_or_above_second_apron: true
+    room:
+      available_when_cap_room_used: true
+  bi_annual_exception:
+    available_below_first_apron: true
+    hard_caps_team_at_first_apron: true
+sign_and_trade:
+  allowed: true
+  receiving_team_must_finish_below: "First Apron"
+  base_year_compensation_applies: true
+over_38_rule:
+  applies_at_age: 38
+apron_rules:
+  first_apron_exists: true
+  second_apron_exists: true
+  hard_cap_apron_exists: true
+notes:
+  - "Season-specific cap, tax, and apron amounts must come from a rights-cleared adapter or demo fixture."
+  - "Second-apron restrictions should be applied as hard prohibitions when the team salary exceeds the second-apron threshold."

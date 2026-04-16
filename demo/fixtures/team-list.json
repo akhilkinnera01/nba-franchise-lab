@@ -1,0 +1,52 @@
+{
+  "season": "demo-2026",
+  "meta": {
+    "as_of": "2026-04-15T00:00:00Z",
+    "source_status": "partial",
+    "missing_fields": []
+  },
+  "teams": [
+    {
+      "team_id": 101,
+      "abbreviation": "MMT",
+      "full_name": "Metro Meteors",
+      "conference": "East",
+      "division": "Atlantic",
+      "season": "demo-2026",
+      "wins": 49,
+      "losses": 33,
+      "net_rating": 4.7,
+      "offensive_rating": 117.3,
+      "defensive_rating": 112.6,
+      "pace": 99.4,
+      "roster_count": 15,
+      "standard_contract_count": 14,
+      "committed_salary_cents": 16340000000,
+      "cap_room_cents": null,
+      "tax_room_cents": 740000000,
+      "first_apron_room_cents": 1630000000,
+      "second_apron_room_cents": 2710000000
+    },
+    {
+      "team_id": 202,
+      "abbreviation": "DSN",
+      "full_name": "Desert Nightfall",
+      "conference": "West",
+      "division": "Pacific",
+      "season": "demo-2026",
+      "wins": 38,
+      "losses": 44,
+      "net_rating": -1.2,
+      "offensive_rating": 113.2,
+      "defensive_rating": 114.4,
+      "pace": 97.8,
+      "roster_count": 15,
+      "standard_contract_count": 13,
+      "committed_salary_cents": 14990000000,
+      "cap_room_cents": null,
+      "tax_room_cents": 2090000000,
+      "first_apron_room_cents": 2980000000,
+      "second_apron_room_cents": 4060000000
+    }
+  ]
+}

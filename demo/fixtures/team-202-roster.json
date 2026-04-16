@@ -1,0 +1,61 @@
+{
+  "team": {
+    "team_id": 202,
+    "abbreviation": "DSN",
+    "full_name": "Desert Nightfall",
+    "conference": "West",
+    "division": "Pacific"
+  },
+  "season": "demo-2026",
+  "roster_count": 2,
+  "players": [
+    {
+      "player_id": "player:ember",
+      "display_name": "Tess Rowan",
+      "position": "G",
+      "jersey_number": "11",
+      "roster_status": "active",
+      "birth_date": "1999-06-21",
+      "minutes_per_game": 33.3,
+      "points_per_game": 22.4,
+      "rebounds_per_game": 5.1,
+      "assists_per_game": 6.8,
+      "steals_per_game": 1.2,
+      "blocks_per_game": 0.3,
+      "turnovers_per_game": 2.5,
+      "contract": {
+        "current_salary_cents": 3110000000,
+        "contract_type": "extension",
+        "contract_start_year": 2025,
+        "contract_end_year": 2029,
+        "annual_salary_cents": {
+          "2026-27": 3110000000
+        }
+      }
+    },
+    {
+      "player_id": "player:fable",
+      "display_name": "Dane Holloway",
+      "position": "F",
+      "jersey_number": "7",
+      "roster_status": "active",
+      "birth_date": "2002-01-05",
+      "minutes_per_game": 28.1,
+      "points_per_game": 15.9,
+      "rebounds_per_game": 7.4,
+      "assists_per_game": 2.9,
+      "steals_per_game": 0.8,
+      "blocks_per_game": 0.9,
+      "turnovers_per_game": 1.6,
+      "contract": {
+        "current_salary_cents": 1780000000,
+        "contract_type": "rookie-scale",
+        "contract_start_year": 2024,
+        "contract_end_year": 2028,
+        "annual_salary_cents": {
+          "2026-27": 1780000000
+        }
+      }
+    }
+  ]
+}

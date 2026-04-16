@@ -1,0 +1,87 @@
+{
+  "team": {
+    "team_id": 101,
+    "abbreviation": "MMT",
+    "full_name": "Metro Meteors",
+    "conference": "East",
+    "division": "Atlantic"
+  },
+  "season": "demo-2026",
+  "roster_count": 3,
+  "players": [
+    {
+      "player_id": "player:alpha",
+      "display_name": "Arin Vale",
+      "position": "G",
+      "jersey_number": "3",
+      "roster_status": "active",
+      "birth_date": "2000-08-12",
+      "minutes_per_game": 34.1,
+      "points_per_game": 24.8,
+      "rebounds_per_game": 4.3,
+      "assists_per_game": 7.1,
+      "steals_per_game": 1.5,
+      "blocks_per_game": 0.4,
+      "turnovers_per_game": 2.7,
+      "contract": {
+        "current_salary_cents": 3825000000,
+        "contract_type": "extension",
+        "contract_start_year": 2025,
+        "contract_end_year": 2029,
+        "annual_salary_cents": {
+          "2026-27": 3825000000,
+          "2027-28": 4131000000
+        }
+      }
+    },
+    {
+      "player_id": "player:bravo",
+      "display_name": "Milo Mercer",
+      "position": "F",
+      "jersey_number": "22",
+      "roster_status": "active",
+      "birth_date": "1998-02-17",
+      "minutes_per_game": 31.5,
+      "points_per_game": 18.2,
+      "rebounds_per_game": 8.7,
+      "assists_per_game": 3.4,
+      "steals_per_game": 0.9,
+      "blocks_per_game": 1.2,
+      "turnovers_per_game": 1.8,
+      "contract": {
+        "current_salary_cents": 2475000000,
+        "contract_type": "veteran",
+        "contract_start_year": 2024,
+        "contract_end_year": 2027,
+        "annual_salary_cents": {
+          "2026-27": 2475000000
+        }
+      }
+    },
+    {
+      "player_id": "player:charlie",
+      "display_name": "Noah Kade",
+      "position": "C",
+      "jersey_number": "55",
+      "roster_status": "active",
+      "birth_date": "2001-11-03",
+      "minutes_per_game": 27.9,
+      "points_per_game": 13.6,
+      "rebounds_per_game": 10.1,
+      "assists_per_game": 2.0,
+      "steals_per_game": 0.7,
+      "blocks_per_game": 1.8,
+      "turnovers_per_game": 1.9,
+      "contract": {
+        "current_salary_cents": 1610000000,
+        "contract_type": "rookie-scale",
+        "contract_start_year": 2024,
+        "contract_end_year": 2028,
+        "annual_salary_cents": {
+          "2026-27": 1610000000,
+          "2027-28": 1900000000
+        }
+      }
+    }
+  ]
+}

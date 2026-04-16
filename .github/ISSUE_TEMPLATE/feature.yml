@@ -1,0 +1,42 @@
+name: Feature request
+description: Plan and track a new feature or enhancement
+title: "[Feature]: "
+labels:
+  - type:feature
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should be built?
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why does this matter for the product or contributors?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this to be considered complete?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks or dependencies
+      description: External blockers, credentials, data dependencies, or design decisions
+  - type: checkboxes
+    id: source_rights
+    attributes:
+      label: Source rights / provenance
+      options:
+        - label: The source is public and redistributable
+        - label: The license or terms of use have been reviewed
+        - label: The data or asset can be stored in a public repository
+        - label: A demo-data fallback exists if rights are not yet confirmed
+        - label: Any restricted source is blocked until approval is documented

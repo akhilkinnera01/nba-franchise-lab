@@ -1,0 +1,46 @@
+{
+  "team": {
+    "team_id": 101,
+    "abbreviation": "MMT",
+    "full_name": "Metro Meteors",
+    "conference": "East",
+    "division": "Atlantic"
+  },
+  "season": "demo-2026",
+  "current": {
+    "season": "demo-2026",
+    "committed_salary_cents": 16340000000,
+    "cap_hold_cents": 420000000,
+    "total_team_salary_cents": 16760000000,
+    "salary_cap_cents": 15400000000,
+    "luxury_tax_cents": 17100000000,
+    "first_apron_cents": 18000000000,
+    "second_apron_cents": 19100000000,
+    "cap_room_cents": null,
+    "tax_room_cents": 340000000,
+    "first_apron_room_cents": 1240000000,
+    "second_apron_room_cents": 2340000000,
+    "standard_contract_count": 14,
+    "expiring_player_ids": ["player:delta"],
+    "expiring_salary_cents": 930000000
+  },
+  "projection": [
+    {
+      "season": "demo-2027",
+      "committed_salary_cents": 15120000000,
+      "cap_hold_cents": 780000000,
+      "total_team_salary_cents": 15900000000,
+      "salary_cap_cents": 16000000000,
+      "luxury_tax_cents": 17700000000,
+      "first_apron_cents": 18600000000,
+      "second_apron_cents": 19700000000,
+      "cap_room_cents": 100000000,
+      "tax_room_cents": 1800000000,
+      "first_apron_room_cents": 2700000000,
+      "second_apron_room_cents": 3800000000,
+      "standard_contract_count": 12,
+      "expiring_player_ids": ["player:bravo"],
+      "expiring_salary_cents": 2475000000
+    }
+  ]
+}

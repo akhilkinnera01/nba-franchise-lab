@@ -1,0 +1,46 @@
+{
+  "team": {
+    "team_id": 202,
+    "abbreviation": "DSN",
+    "full_name": "Desert Nightfall",
+    "conference": "West",
+    "division": "Pacific"
+  },
+  "season": "demo-2026",
+  "current": {
+    "season": "demo-2026",
+    "committed_salary_cents": 14990000000,
+    "cap_hold_cents": 390000000,
+    "total_team_salary_cents": 15380000000,
+    "salary_cap_cents": 15400000000,
+    "luxury_tax_cents": 17100000000,
+    "first_apron_cents": 18000000000,
+    "second_apron_cents": 19100000000,
+    "cap_room_cents": 20000000,
+    "tax_room_cents": 1720000000,
+    "first_apron_room_cents": 2620000000,
+    "second_apron_room_cents": 3720000000,
+    "standard_contract_count": 13,
+    "expiring_player_ids": ["player:glow"],
+    "expiring_salary_cents": 740000000
+  },
+  "projection": [
+    {
+      "season": "demo-2027",
+      "committed_salary_cents": 14150000000,
+      "cap_hold_cents": 640000000,
+      "total_team_salary_cents": 14790000000,
+      "salary_cap_cents": 16000000000,
+      "luxury_tax_cents": 17700000000,
+      "first_apron_cents": 18600000000,
+      "second_apron_cents": 19700000000,
+      "cap_room_cents": 1210000000,
+      "tax_room_cents": 2910000000,
+      "first_apron_room_cents": 3810000000,
+      "second_apron_room_cents": 4910000000,
+      "standard_contract_count": 11,
+      "expiring_player_ids": ["player:ember"],
+      "expiring_salary_cents": 3110000000
+    }
+  ]
+}
