@@ -15,13 +15,14 @@ import type { TeamCapResponse, TeamRosterResponse } from '@/lib/api/types';
 export const dynamic = 'force-dynamic';
 
 interface TeamDetailPageProps {
-  params: {
+  params: Promise<{
     teamId: string;
-  };
+  }>;
 }
 
 export default async function TeamDetailPage({ params }: TeamDetailPageProps) {
-  const teamId = Number(params.teamId);
+  const { teamId: rawTeamId } = await params;
+  const teamId = Number(rawTeamId);
 
   if (!Number.isInteger(teamId)) {
     notFound();

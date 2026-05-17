@@ -5,20 +5,22 @@ import { ApiClientError, listTeamHealthSummaries } from '@/lib/api/client';
 export const dynamic = 'force-dynamic';
 
 interface RebuildPlannerPageProps {
-  searchParams?: {
+  searchParams?: Promise<{
     team?: string;
-  };
+  }>;
 }
 
 export default async function RebuildPlannerPage({
   searchParams,
 }: RebuildPlannerPageProps) {
+  const params = await searchParams;
+
   try {
     const payload = await listTeamHealthSummaries();
     return (
       <RebuildPlanner
         teams={payload.teams}
-        initialTeamId={searchParams?.team ? Number(searchParams.team) : undefined}
+        initialTeamId={params?.team ? Number(params.team) : undefined}
       />
     );
   } catch (error) {
