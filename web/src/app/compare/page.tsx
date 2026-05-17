@@ -3,17 +3,19 @@ import { ScenarioCompareWorkspace } from '@/components/scenario-compare-workspac
 export const dynamic = 'force-dynamic';
 
 interface ComparePageProps {
-  searchParams?: {
+  searchParams?: Promise<{
     left?: string;
     right?: string;
-  };
+  }>;
 }
 
-export default function ComparePage({ searchParams }: ComparePageProps) {
+export default async function ComparePage({ searchParams }: ComparePageProps) {
+  const params = await searchParams;
+
   return (
     <ScenarioCompareWorkspace
-      initialLeftScenarioId={searchParams?.left}
-      initialRightScenarioId={searchParams?.right}
+      initialLeftScenarioId={params?.left}
+      initialRightScenarioId={params?.right}
     />
   );
 }

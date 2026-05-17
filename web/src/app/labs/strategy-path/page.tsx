@@ -5,20 +5,22 @@ import { ApiClientError, listTeamHealthSummaries } from '@/lib/api/client';
 export const dynamic = 'force-dynamic';
 
 interface StrategyPathPageProps {
-  searchParams?: {
+  searchParams?: Promise<{
     team?: string;
-  };
+  }>;
 }
 
 export default async function StrategyPathPage({
   searchParams,
 }: StrategyPathPageProps) {
+  const params = await searchParams;
+
   try {
     const payload = await listTeamHealthSummaries();
     return (
       <StrategyPathSimulator
         teams={payload.teams}
-        initialTeamId={searchParams?.team ? Number(searchParams.team) : undefined}
+        initialTeamId={params?.team ? Number(params.team) : undefined}
       />
     );
   } catch (error) {

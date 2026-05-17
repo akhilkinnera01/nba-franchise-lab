@@ -5,28 +5,30 @@ import { ApiClientError, listTeamHealthSummaries } from '@/lib/api/client';
 export const dynamic = 'force-dynamic';
 
 interface ScenariosPageProps {
-  searchParams?: {
+  searchParams?: Promise<{
     primaryTeam?: string;
     tool?: string;
     state?: string;
-  };
+  }>;
 }
 
 export default async function ScenariosPage({
   searchParams,
 }: ScenariosPageProps) {
+  const params = await searchParams;
+
   try {
     const teamPayload = await listTeamHealthSummaries();
     return (
       <ScenarioWorkspace
         initialTeams={teamPayload.teams}
         initialPrimaryTeamId={
-          searchParams?.primaryTeam
-            ? Number(searchParams.primaryTeam)
+          params?.primaryTeam
+            ? Number(params.primaryTeam)
             : undefined
         }
-        initialTool={searchParams?.tool}
-        initialEncodedState={searchParams?.state}
+        initialTool={params?.tool}
+        initialEncodedState={params?.state}
       />
     );
   } catch (error) {
